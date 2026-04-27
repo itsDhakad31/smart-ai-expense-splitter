@@ -98,7 +98,7 @@ Open the Vite URL shown in the terminal, usually `http://localhost:5173`.
 
 ## Deployment Notes
 
-### Frontend on netlify
+### Frontend on Vercel
 
 - Set the root directory to `client`
 - Add `VITE_API_BASE_URL` pointing to your deployed backend URL
