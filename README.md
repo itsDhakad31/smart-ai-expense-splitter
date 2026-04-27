@@ -66,16 +66,7 @@ Use Node.js `18+` so the backend can use the built-in `fetch` API.
 
 ### 2. Add environment variables
 
-Create `server/.env`:
-
-```env
-PORT=4000
-OPENAI_API_KEY=your_openai_key_here
-OPENAI_MODEL=gpt-5
-OPENAI_INSIGHTS_MODEL=gpt-5
-```
-
-The app still works without `OPENAI_API_KEY`. In that case:
+ In that case:
 
 - Expense categorization falls back to local keyword matching
 - Insights fall back to local rule-based summaries
@@ -107,7 +98,7 @@ Open the Vite URL shown in the terminal, usually `http://localhost:5173`.
 
 ## Deployment Notes
 
-### Frontend on Vercel
+### Frontend on netlify
 
 - Set the root directory to `client`
 - Add `VITE_API_BASE_URL` pointing to your deployed backend URL
@@ -115,7 +106,6 @@ Open the Vite URL shown in the terminal, usually `http://localhost:5173`.
 ### Backend on Render or Railway
 
 - Set the root directory to `server`
-- Add `OPENAI_API_KEY` in environment variables
 - Use `npm start` as the production start command
 
 ## Important Limitation
